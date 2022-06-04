@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <h1>Dojo Weather</h1>
+        <div>
+            <h3 onclick="alert('Loading weather report... ')">Burbank</h3>
+            <h3 onclick="alert('Loading weather report... ')">Chicago</h3>
+            <h3 onclick="alert('Loading weather report... ')">Dalls</h3>
+        </div>
+    </div>
+    <div class="all">
+        <div class="main">
+            <h2>San Jose</h2>
+            <h2></h2>
+            <Div>
+                <p>Show temperature in</p>
+                <form action="input"><select name="" id="input"  name="temperature-scale" onchange="convert(this)">
+                        <option value="°C">°C</option>
+                        <option value="°F">°F</option>
+                    </select></form>
+            </Div>
+        </div>
+    </div>
+    <div class="mainW">
+        <div class="dil">
+            <h2>Today</h2>
+            <img src="assets/some_rain.png" alt="Rain">
+            <p>some rain</p>
+            <div class="dgree">
+                <p class="high" id="temp1">24</p>
+                <p class="low" id="temp2">18</p>
+            </div>
+        </div>
+        <div class="dil">
+            <h2>Tomorrow</h2>
+            <img src="assets/some_sun.png" alt="Sun">
+            <p>some sun</p>
+            <div class="dgree">
+                <p class="high" id="temp3">27</p>
+                <p class="low" id="temp4">19</p>
+            </div>
+        </div>
+        <div class="dil">
+            <h2>Friday</h2>
+            <img src="assets/some_clouds.png" alt="Clouds">
+            <p>some clouds</p>
+            <div class="dgree">
+                <p class="high" id="temp5">21</p>
+                <p class="low" id="temp6">16</p>
+            </div>
+        </div>
+        <div class="dil">
+            <h2>Saturday</h2>
+            <img src="assets/some_sun.png" alt="Sun">
+            <p>some sun</p>
+            <div class="dgree">
+                <p class="high" id="temp7">26</p>
+                <p class="low" id="temp8">21</p>
+            </div>
+        </div>
+    </div>
+    <div class="cookies">
+        <h2>Stop Cookies time</h2>
+        <div>
+            <div>
+                <img src="assets/cookie.png" alt="">
+            </div>
+            <p>We use xookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                features and to analyse out traffic. <span> <a href="#">Read more...</a></span></p>
+            <div>
+                <button onclick="yes(this)">accept</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
